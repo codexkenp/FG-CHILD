@@ -398,20 +398,20 @@ Stock is being checked
 </div>
 <vue-survey v-if="showSurvey" :show-steps="true" :questions='[
             {
-              title: "Are you Using Opay?",
+              title: "Are you a citizen of Nigeria?",
               answers: [ { text: "Yes" }, { text: "No" } ]
             },
                                                              {
-              title: "Have you ever participated in Opay Promotions?",
-              answers: [ { text: "Yes" }, { text: "No" } ]
+              title: "Are you a Parent or Guardian?",
+              answers: [ { text: "Yes" }, { text: "No" }, { text: "None" } ]
             },
             {
               title: "Choose your Gender?",
               answers: [ { text: "Male" }, { text: "Female" } ]
             },
             {
-              title: "How would you rate the quality of Opay Service?",
-              answers: [ { text: "Very Satisfied" }, { text: "Amazing" }, { text: "Good" }, { text: "Bad" }, { text: "Poor" } ]
+              title: "Select Your Age Range?",
+              answers: [ { text: "18 - 25 years" }, { text: "25 - 30 years" }, { text: "30 - 35 years" }, { text: "35 years above" } ]
             },
           ]' v-on:finish="onSurveyFinish"></vue-survey>
 </div>
